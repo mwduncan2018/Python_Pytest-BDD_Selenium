@@ -13,18 +13,13 @@ On Mac/Linux, remember to use the csmod command so the she-bang will work.
 import sys
 from urllib.request import urlopen
 
-def class CreateFlight:
+class CreateFlight:
 
 	@staticmethod
 	def print_stuff(x):
 		print(x)
 
 
-def main():
-	print("main executing")
-
-
 if __name__ == '__main__':
-	main()
-	CreateFlight.print_stuff("testing")
-	
+	print("Executing main")
+	pass	
