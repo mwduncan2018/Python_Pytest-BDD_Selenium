@@ -1,1 +1,213 @@
-[{"keyword": "Feature", "uri": "python_selenium_automation_framework\\Login.feature", "name": "Login functionality", "id": "python_selenium_automation_framework\\login.feature", "line": 1, "description": "This is a test to get going with pytest bdd.", "tags": [], "elements": [{"keyword": "Scenario", "id": "test_login_with_a_valid_username_and_password", "name": "Login with a valid username and password", "line": 4, "description": "", "tags": [], "type": "scenario", "steps": [{"keyword": "Given", "name": "DSF navigates to the Login Page", "line": 5, "match": {"location": ""}, "result": {"status": "passed", "duration": 206003665}}, {"keyword": "When", "name": "logging in with a valid username and password combo", "line": 6, "match": {"location": ""}, "result": {"status": "passed", "duration": 270998477}}, {"keyword": "Then", "name": "DSF is at the Flights Page", "line": 7, "match": {"location": ""}, "result": {"status": "passed", "duration": 24998903}}, {"keyword": "And", "name": "DSF is not at the Login Page", "line": 8, "match": {"location": ""}, "result": {"status": "passed", "duration": 13998270}}]}, {"keyword": "Scenario", "id": "test_login_with_a_valid_username_and_password__parametrized[tduncan-airforce1]", "name": "Login with a valid username and password Parametrized", "line": 10, "description": "", "tags": [], "type": "scenario", "steps": [{"keyword": "Given", "name": "DSF navigates to the Login Page", "line": 11, "match": {"location": ""}, "result": {"status": "passed", "duration": 210999965}}, {"keyword": "When", "name": "logging in as username <username> and password <password>", "line": 12, "match": {"location": ""}, "result": {"status": "passed", "duration": 255005121}}, {"keyword": "Then", "name": "DSF is at the Flights Page", "line": 13, "match": {"location": ""}, "result": {"status": "passed", "duration": 22000551}}]}, {"keyword": "Scenario", "id": "test_login_with_a_valid_username_and_password__parametrized[sharford-michigan]", "name": "Login with a valid username and password Parametrized", "line": 10, "description": "", "tags": [], "type": "scenario", "steps": [{"keyword": "Given", "name": "DSF navigates to the Login Page", "line": 11, "match": {"location": ""}, "result": {"status": "passed", "duration": 204003095}}, {"keyword": "When", "name": "logging in as username <username> and password <password>", "line": 12, "match": {"location": ""}, "result": {"status": "passed", "duration": 257001161}}, {"keyword": "Then", "name": "DSF is at the Flights Page", "line": 13, "match": {"location": ""}, "result": {"status": "passed", "duration": 2027292490}}]}, {"keyword": "Scenario", "id": "test_login_with_a_valid_username_and_password__parametrized[gduncan-mommom]", "name": "Login with a valid username and password Parametrized", "line": 10, "description": "", "tags": [], "type": "scenario", "steps": [{"keyword": "Given", "name": "DSF navigates to the Login Page", "line": 11, "match": {"location": ""}, "result": {"status": "passed", "duration": 222006559}}, {"keyword": "When", "name": "logging in as username <username> and password <password>", "line": 12, "match": {"location": ""}, "result": {"status": "passed", "duration": 248000621}}, {"keyword": "Then", "name": "DSF is at the Flights Page", "line": 13, "match": {"location": ""}, "result": {"status": "passed", "duration": 24998903}}]}]}]
+[
+    {
+        "keyword": "Feature",
+        "uri": "python_selenium_automation_framework\\Login.feature",
+        "name": "Login functionality",
+        "id": "python_selenium_automation_framework\\login.feature",
+        "line": 1,
+        "description": "This is a test to get going with pytest bdd.",
+        "tags": [],
+        "elements": [
+            {
+                "keyword": "Scenario",
+                "id": "test_login_with_a_valid_username_and_password",
+                "name": "Login with a valid username and password",
+                "line": 4,
+                "description": "",
+                "tags": [],
+                "type": "scenario",
+                "steps": [
+                    {
+                        "keyword": "Given",
+                        "name": "DSF navigates to the Login Page",
+                        "line": 5,
+                        "match": {
+                            "location": ""
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 206003665
+                        }
+                    },
+                    {
+                        "keyword": "When",
+                        "name": "logging in with a valid username and password combo",
+                        "line": 6,
+                        "match": {
+                            "location": ""
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 270998477
+                        }
+                    },
+                    {
+                        "keyword": "Then",
+                        "name": "DSF is at the Flights Page",
+                        "line": 7,
+                        "match": {
+                            "location": ""
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 24998903
+                        }
+                    },
+                    {
+                        "keyword": "And",
+                        "name": "DSF is not at the Login Page",
+                        "line": 8,
+                        "match": {
+                            "location": ""
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 13998270
+                        }
+                    }
+                ]
+            },
+            {
+                "keyword": "Scenario",
+                "id": "test_login_with_a_valid_username_and_password__parametrized[tduncan-airforce1]",
+                "name": "Login with a valid username and password Parametrized",
+                "line": 10,
+                "description": "",
+                "tags": [],
+                "type": "scenario",
+                "steps": [
+                    {
+                        "keyword": "Given",
+                        "name": "DSF navigates to the Login Page",
+                        "line": 11,
+                        "match": {
+                            "location": ""
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 210999965
+                        }
+                    },
+                    {
+                        "keyword": "When",
+                        "name": "logging in as username <username> and password <password>",
+                        "line": 12,
+                        "match": {
+                            "location": ""
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 255005121
+                        }
+                    },
+                    {
+                        "keyword": "Then",
+                        "name": "DSF is at the Flights Page",
+                        "line": 13,
+                        "match": {
+                            "location": ""
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 22000551
+                        }
+                    }
+                ]
+            },
+            {
+                "keyword": "Scenario",
+                "id": "test_login_with_a_valid_username_and_password__parametrized[sharford-michigan]",
+                "name": "Login with a valid username and password Parametrized",
+                "line": 10,
+                "description": "",
+                "tags": [],
+                "type": "scenario",
+                "steps": [
+                    {
+                        "keyword": "Given",
+                        "name": "DSF navigates to the Login Page",
+                        "line": 11,
+                        "match": {
+                            "location": ""
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 204003095
+                        }
+                    },
+                    {
+                        "keyword": "When",
+                        "name": "logging in as username <username> and password <password>",
+                        "line": 12,
+                        "match": {
+                            "location": ""
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 257001161
+                        }
+                    },
+                    {
+                        "keyword": "Then",
+                        "name": "DSF is at the Flights Page",
+                        "line": 13,
+                        "match": {
+                            "location": ""
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 2027292490
+                        }
+                    }
+                ]
+            },
+            {
+                "keyword": "Scenario",
+                "id": "test_login_with_a_valid_username_and_password__parametrized[gduncan-mommom]",
+                "name": "Login with a valid username and password Parametrized",
+                "line": 10,
+                "description": "",
+                "tags": [],
+                "type": "scenario",
+                "steps": [
+                    {
+                        "keyword": "Given",
+                        "name": "DSF navigates to the Login Page",
+                        "line": 11,
+                        "match": {
+                            "location": ""
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 222006559
+                        }
+                    },
+                    {
+                        "keyword": "When",
+                        "name": "logging in as username <username> and password <password>",
+                        "line": 12,
+                        "match": {
+                            "location": ""
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 248000621
+                        }
+                    },
+                    {
+                        "keyword": "Then",
+                        "name": "DSF is at the Flights Page",
+                        "line": 13,
+                        "match": {
+                            "location": ""
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 24998903
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+]
