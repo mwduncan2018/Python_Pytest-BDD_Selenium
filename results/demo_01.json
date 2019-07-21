@@ -1,0 +1,261 @@
+[
+    {
+        "keyword": "Feature",
+        "uri": "python_selenium_automation_framework\\f_01.feature",
+        "name": "f_01",
+        "id": "python_selenium_automation_framework\\f_01.feature",
+        "line": 1,
+        "description": "This is a test to get going with pytest bdd.",
+        "tags": [],
+        "elements": [
+            {
+                "keyword": "Scenario",
+                "id": "test_login_with_a_valid_username_and_password",
+                "name": "Login with a valid username and password",
+                "line": 7,
+                "description": "",
+                "tags": [],
+                "type": "scenario",
+                "steps": [
+                    {
+                        "keyword": "Given",
+                        "name": "the webdriver is initialized",
+                        "line": 5,
+                        "match": {
+                            "location": ""
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0
+                        }
+                    },
+                    {
+                        "keyword": "Given",
+                        "name": "DSF navigates to the Login Page",
+                        "line": 8,
+                        "match": {
+                            "location": ""
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 193001270
+                        }
+                    },
+                    {
+                        "keyword": "When",
+                        "name": "logging in with a valid username and password combo",
+                        "line": 9,
+                        "match": {
+                            "location": ""
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 242998838
+                        }
+                    },
+                    {
+                        "keyword": "Then",
+                        "name": "DSF is at the Flights Page",
+                        "line": 10,
+                        "match": {
+                            "location": ""
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 25002717
+                        }
+                    },
+                    {
+                        "keyword": "And",
+                        "name": "DSF is not at the Login Page",
+                        "line": 11,
+                        "match": {
+                            "location": ""
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 14995574
+                        }
+                    }
+                ]
+            },
+            {
+                "keyword": "Scenario",
+                "id": "test_login_with_a_valid_username_and_password__parametrized[tduncan-airforce1]",
+                "name": "Login with a valid username and password Parametrized",
+                "line": 13,
+                "description": "",
+                "tags": [],
+                "type": "scenario",
+                "steps": [
+                    {
+                        "keyword": "Given",
+                        "name": "the webdriver is initialized",
+                        "line": 5,
+                        "match": {
+                            "location": ""
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0
+                        }
+                    },
+                    {
+                        "keyword": "Given",
+                        "name": "DSF navigates to the Login Page",
+                        "line": 14,
+                        "match": {
+                            "location": ""
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 206001758
+                        }
+                    },
+                    {
+                        "keyword": "When",
+                        "name": "logging in as username <username> and password <password>",
+                        "line": 15,
+                        "match": {
+                            "location": ""
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 252001285
+                        }
+                    },
+                    {
+                        "keyword": "Then",
+                        "name": "DSF is at the Flights Page",
+                        "line": 16,
+                        "match": {
+                            "location": ""
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 26028633
+                        }
+                    }
+                ]
+            },
+            {
+                "keyword": "Scenario",
+                "id": "test_login_with_a_valid_username_and_password__parametrized[sharford-michigan]",
+                "name": "Login with a valid username and password Parametrized",
+                "line": 13,
+                "description": "",
+                "tags": [],
+                "type": "scenario",
+                "steps": [
+                    {
+                        "keyword": "Given",
+                        "name": "the webdriver is initialized",
+                        "line": 5,
+                        "match": {
+                            "location": ""
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0
+                        }
+                    },
+                    {
+                        "keyword": "Given",
+                        "name": "DSF navigates to the Login Page",
+                        "line": 14,
+                        "match": {
+                            "location": ""
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 2241135597
+                        }
+                    },
+                    {
+                        "keyword": "When",
+                        "name": "logging in as username <username> and password <password>",
+                        "line": 15,
+                        "match": {
+                            "location": ""
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 254001140
+                        }
+                    },
+                    {
+                        "keyword": "Then",
+                        "name": "DSF is at the Flights Page",
+                        "line": 16,
+                        "match": {
+                            "location": ""
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 28002262
+                        }
+                    }
+                ]
+            },
+            {
+                "keyword": "Scenario",
+                "id": "test_login_with_a_valid_username_and_password__parametrized[gduncan-mommom]",
+                "name": "Login with a valid username and password Parametrized",
+                "line": 13,
+                "description": "",
+                "tags": [],
+                "type": "scenario",
+                "steps": [
+                    {
+                        "keyword": "Given",
+                        "name": "the webdriver is initialized",
+                        "line": 5,
+                        "match": {
+                            "location": ""
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0
+                        }
+                    },
+                    {
+                        "keyword": "Given",
+                        "name": "DSF navigates to the Login Page",
+                        "line": 14,
+                        "match": {
+                            "location": ""
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 195001363
+                        }
+                    },
+                    {
+                        "keyword": "When",
+                        "name": "logging in as username <username> and password <password>",
+                        "line": 15,
+                        "match": {
+                            "location": ""
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 230997562
+                        }
+                    },
+                    {
+                        "keyword": "Then",
+                        "name": "DSF is at the Flights Page",
+                        "line": 16,
+                        "match": {
+                            "location": ""
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 26003599
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+]
