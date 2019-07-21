@@ -8,15 +8,15 @@ from pytest_bdd import (
     parsers,
 )
 import sys, os
-from .SFAF.driver import Driver
-from .SFAF.page_objects.abstract_page.abstract_page import AbstractPage
-from .SFAF.page_objects.login_page.login_page import LoginPage
-from .SFAF.page_objects.flights_page.flights_page import FlightsPage
-from .SFAF.page_objects.create_flight_page.create_flight_page import CreateFlightPage
-from .SFAF.page_objects.delete_flight_page.delete_flight_page import DeleteFlightPage
-from .SFAF.page_objects.watch_list_page.watch_list_page import WatchListPage
-from .SFAF.page_objects.create_watch_list_entry_page.create_watch_list_entry_page import CreateWatchListEntryPage
-from .SFAF.page_objects.delete_watch_list_entry_page.delete_watch_list_entry_page import DeleteWatchListEntryPage
+from .safe_flight_automation_framework.driver import Driver
+from .safe_flight_automation_framework.page_objects.abstract_page.abstract_page import AbstractPage
+from .safe_flight_automation_framework.page_objects.login_page.login_page import LoginPage
+from .safe_flight_automation_framework.page_objects.flights_page.flights_page import FlightsPage
+from .safe_flight_automation_framework.page_objects.create_flight_page.create_flight_page import CreateFlightPage
+from .safe_flight_automation_framework.page_objects.delete_flight_page.delete_flight_page import DeleteFlightPage
+from .safe_flight_automation_framework.page_objects.watch_list_page.watch_list_page import WatchListPage
+from .safe_flight_automation_framework.page_objects.create_watch_list_entry_page.create_watch_list_entry_page import CreateWatchListEntryPage
+from .safe_flight_automation_framework.page_objects.delete_watch_list_entry_page.delete_watch_list_entry_page import DeleteWatchListEntryPage
 
 D = Driver
 AP = AbstractPage
