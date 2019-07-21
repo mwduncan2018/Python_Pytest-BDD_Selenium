@@ -55,44 +55,6 @@ class WatchListPage(AbstractPage):
         self._table['delete_column'] = Driver.instance.find_elements(*self._selectors['delete_column'])
 
     @classmethod
-    def is_at(self):
-        """Determine if the browser is on the Watch List Page.
-
-        Args:
-            None
-
-        Returns:
-            True if the browser is on the Watch List Page.
-            False if the browser is not on the Watch List Page.
-        """
-        return super().is_at()
-
-    @classmethod
-    def is_at_with_exception(self):
-        """Throw an exception if the browser is not on the Watch List Page.
-
-        Args:
-            None.
-
-        Returns:
-            True if the browser is on the Watch List Page.
-            Throws an exception if the browser is not on the Watch List Page.
-        """
-        return super().is_at_with_exception()
-
-    @classmethod
-    def go_to(self):
-        """Navigate to the Watch List Page.
-
-        Args:
-            None
-
-        Returns:
-            None
-        """
-        super().go_to(self._path)
-
-    @classmethod
     def index_of(self, last_name, first_name):
         """Determine the row index for a person in the table.
         The search is based on a match with the first name and last name.

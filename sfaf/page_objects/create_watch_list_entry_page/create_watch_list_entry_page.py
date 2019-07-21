@@ -19,7 +19,7 @@ class CreateWatchListEntryPage(AbstractPage):
 
     #Selectors that selenium uses to access elements on the page are stored in this dictionary.
     _selectors = {
-		'bounty' : (By.ID, 'DepartureAirport'),
+		'bounty' : (By.ID, 'Bounty'),
 		'first_name' : (By.ID, 'FirstName'),
 		'last_name' : (By.ID, 'LastName'),
 		'create_button' : (By.ID, 'btnCreate'),
@@ -39,44 +39,6 @@ class CreateWatchListEntryPage(AbstractPage):
             A CreateWatchListEntryCommand object.
         """
         return CreateWatchListEntryCommand(self._selectors)
-
-    @classmethod
-    def is_at(self):
-        """Determine if the browser is on the Create Watch List Entry Page.
-
-        Args:
-            None
-
-        Returns:
-            True if the browser is on the Create Watch List Entry Page.
-            False if the browser is not on the Create Watch List Entry Page.
-        """
-        return super().is_at()
-
-    @classmethod
-    def is_at_with_exception(self):
-        """Throw an exception if the browser is not on the Create Watch List Entry Page.
-
-        Args:
-            None.
-
-        Returns:
-            True if the browser is on the Create Watch List Entry Page.
-            Throws an exception if the browser is not on the Create Watch List Entry Page.
-        """
-        return super().is_at_with_exception()
-
-    @classmethod
-    def go_to(self):
-        """Navigate to the Create Watch List Entry Page.
-
-        Args:
-            None
-
-        Returns:
-            None
-        """
-        super().go_to(self._path)
 
 
 if __name__ == '__main__':

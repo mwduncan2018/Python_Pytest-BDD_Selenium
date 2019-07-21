@@ -43,44 +43,6 @@ class LoginPage(AbstractPage):
         return LoginCommand(username, self._selectors)
 
     @classmethod
-    def is_at(self):
-        """Determine if the browser is on the Login Page.
-
-        Args:
-            None
-
-        Returns:
-            True if the browser is on the Login Page.
-            False if the browser is not on the Login Page.
-        """
-        return super().is_at()
-
-    @classmethod
-    def is_at_with_exception(self):
-        """Throw an exception if the browser is not on the Login Page.
-
-        Args:
-            None.
-
-        Returns:
-            True if the browser is on the Login Page.
-            Throws an exception if the browser is not on the Login Page.
-        """
-        return super().is_at_with_exception()
-
-    @classmethod
-    def go_to(self):
-        """Navigate to the Login Page.
-
-        Args:
-            None
-
-        Returns:
-            None
-        """
-        super().go_to(self._path)
-
-    @classmethod
     def username_validation_is_displayed(self):
         """Determine if the text of the username validation is displayed properly.
 
@@ -92,7 +54,7 @@ class LoginPage(AbstractPage):
             False if text of the username validation is not correctly displayed.
         """
         self.is_at()
-        return Driver.instance.find_element(*_USERNAME_VALIDATION).text == "The Username field is required."
+        return Driver.instance.find_element(*self._selectors['username_validation']).text == "The Username field is required."
     
     @classmethod
     def password_validation_is_displayed(self):
@@ -106,7 +68,7 @@ class LoginPage(AbstractPage):
             False if text of the username password is not correctly displayed.
         """
         self.is_at()
-        return Driver.instance.find_element(*_PASSWORD_VALIDATION).text == "The Password field is required."
+        return Driver.instance.find_element(*self._selectors['password_validation']).text == "The Password field is required."
     
     @classmethod
     def validation_username_password_combination_invalid(self):
@@ -120,7 +82,7 @@ class LoginPage(AbstractPage):
             False if text of the validation does not display correctly.
         """
         self.is_at()
-        return Driver.instance.find_element(*_VALIDATION_SUMMARY).text == "The username/password combination is invalid."
+        return Driver.instance.find_element(*self._selectors['validation_summary']).text == "The username/password combination is invalid."
 
 
 if __name__ == "__main__":

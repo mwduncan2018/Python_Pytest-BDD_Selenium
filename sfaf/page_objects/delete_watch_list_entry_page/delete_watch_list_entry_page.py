@@ -22,44 +22,6 @@ class DeleteWatchListEntryPage(AbstractPage):
     }
     
     @classmethod
-    def is_at(self):
-        """Determine if the browser is on the Delete Watch List Entry Page.
-
-        Args:
-            None
-
-        Returns:
-            True if the browser is on the Delete Watch List Entry Page.
-            False if the browser is not on the Delete Watch List Entry Page.
-        """
-        super().is_at()
-
-    @classmethod
-    def is_at_with_exception(self):
-        """Throw an exception if the browser is not on the Delete Watch List Entry Page.
-
-        Args:
-            None.
-
-        Returns:
-            True if the browser is on the Delete Watch List Entry Page.
-            Throws an exception if the browser is not on the Delete Watch List Entry Page.
-        """
-        return super().is_at_with_exception()
-
-    @classmethod
-    def go_to(self):
-        """Navigate to the Delete Watch List Entry Page. This will fail because an ID is not provided.
-
-        Args:
-            None
-
-        Returns:
-            None
-        """
-        super().go_to(self._path)
-
-    @classmethod
     def click_delete_button(self):
         """Clicks the delete button to delete the watch list entry.
 

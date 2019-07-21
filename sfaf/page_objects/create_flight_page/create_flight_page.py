@@ -44,44 +44,6 @@ class CreateFlightPage(AbstractPage):
         """
         return CreateFlightCommand(self._selectors)
 
-    @classmethod
-    def is_at(self):
-        """Determine if the browser is on the Create Flight Page.
-
-        Args:
-            None
-
-        Returns:
-            True if the browser is on the Create Flight Page.
-            False if the browser is not on the Create Flight Page.
-        """
-        return super().is_at()
-
-    @classmethod
-    def is_at_with_exception(self):
-        """Throw an exception if the browser is not on the Create Flight Page.
-
-        Args:
-            None.
-
-        Returns:
-            True if the browser is on the Create Flight Page.
-            Throws an exception if the browser is not on the Create Flight Page.
-        """
-        return super().is_at_with_exception()
-
-    @classmethod
-    def go_to(self):
-        """Navigate to the Create Flight Page.
-
-        Args:
-            None
-
-        Returns:
-            None
-        """
-        super().go_to(self._path)
-
 
 if __name__ == '__main__':
 	pass
