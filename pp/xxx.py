@@ -1,8 +1,6 @@
 import pytest
 
 import sys, os
-from .driver import Driver
-from .page_objects.login_page.login_page import LoginPage
 
 
 x = 0

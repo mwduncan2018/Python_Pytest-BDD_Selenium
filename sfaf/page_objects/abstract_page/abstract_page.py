@@ -2,7 +2,7 @@
 """Page-object model for the abstract page that holds common functionality of all pages.
 """
 
-import sys
+import sys, os
 from ...driver import Driver
 from selenium.webdriver.common.by import By
 
