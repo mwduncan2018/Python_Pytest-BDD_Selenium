@@ -18,15 +18,6 @@ from .safe_flight_automation_framework.page_objects.watch_list_page.watch_list_p
 from .safe_flight_automation_framework.page_objects.create_watch_list_entry_page.create_watch_list_entry_page import CreateWatchListEntryPage
 from .safe_flight_automation_framework.page_objects.delete_watch_list_entry_page.delete_watch_list_entry_page import DeleteWatchListEntryPage
 
-D = Driver
-AP = AbstractPage
-LP = LoginPage
-FP = FlightsPage
-CFP = CreateFlightPage
-DFP = DeleteFlightPage
-WLP = WatchListPage
-CWLEP = CreateWatchListEntryPage
-DWLEP = DeleteWatchListEntryPage
 
 #This fixture is given to each scenario to startup and shutdown the browser.
 @pytest.fixture
