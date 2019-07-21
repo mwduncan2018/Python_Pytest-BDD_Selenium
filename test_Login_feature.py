@@ -1,13 +1,13 @@
-"""Login feature tests."""
+"""Step definitions for the Login Feature.
+
+Usage:
+    Generate a report in Cucumber JSON format by executing pytest in the same directory as this file.
+    pytest --cucumberjson=<path>
+    pytest --cucumberjson=C:/dev/Python/python_selenium_automation_framework/pytest_bdd_results/results_01.json
+"""
 import pytest
-from pytest_bdd import (
-    scenario,
-    given,
-    when,
-    then,
-    parsers,
-)
 import sys, os
+from pytest_bdd import scenario, given, when, then, parsers
 from .safe_flight_automation_framework.driver import Driver
 from .safe_flight_automation_framework.page_objects.abstract_page.abstract_page import AbstractPage
 from .safe_flight_automation_framework.page_objects.login_page.login_page import LoginPage
@@ -17,7 +17,6 @@ from .safe_flight_automation_framework.page_objects.delete_flight_page.delete_fl
 from .safe_flight_automation_framework.page_objects.watch_list_page.watch_list_page import WatchListPage
 from .safe_flight_automation_framework.page_objects.create_watch_list_entry_page.create_watch_list_entry_page import CreateWatchListEntryPage
 from .safe_flight_automation_framework.page_objects.delete_watch_list_entry_page.delete_watch_list_entry_page import DeleteWatchListEntryPage
-
 
 #This fixture is given to each scenario to startup and shutdown the browser.
 @pytest.fixture
@@ -50,7 +49,6 @@ def dsf_is_at_the_flights_page():
 @then('DSF is not at the Login Page')
 def dsf_is_not_at_the_login_page():
     assert LoginPage.is_at() == False
-
 
 @scenario('Login.feature', 'Login with a valid username and password Parametrized')
 def test_login_with_a_valid_username_and_password__parametrized(startup_shutdown_driver):
