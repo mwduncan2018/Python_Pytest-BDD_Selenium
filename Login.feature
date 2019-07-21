@@ -1,8 +1,5 @@
-Feature: f_01
+Feature: Login functionality
     This is a test to get going with pytest bdd.
-
-    Background:
-        Given the webdriver is initialized
 
     Scenario: Login with a valid username and password
         Given DSF navigates to the Login Page

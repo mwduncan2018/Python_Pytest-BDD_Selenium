@@ -1,4 +1,4 @@
-"""f_01 feature tests."""
+"""Login feature tests."""
 import pytest
 from pytest_bdd import (
     scenario,
@@ -35,14 +35,14 @@ def startup_shutdown_driver():
     yield
     Driver.shutdown()
 
-@scenario('f_01.feature', 'Login with a valid username and password')
+@scenario('Login.feature', 'Login with a valid username and password')
 def test_login_with_a_valid_username_and_password(startup_shutdown_driver):
     """Login with a valid username and password."""
     pass
 
 @given('the webdriver is initialized')
 def the_webdriver_is_initialized():
-    Driver.init()
+    pass
 
 @given('DSF navigates to the Login Page')
 def dsf_navigates_to_the_login_page():
@@ -61,7 +61,7 @@ def dsf_is_not_at_the_login_page():
     assert LoginPage.is_at() == False
 
 
-@scenario('f_01.feature', 'Login with a valid username and password Parametrized')
+@scenario('Login.feature', 'Login with a valid username and password Parametrized')
 def test_login_with_a_valid_username_and_password__parametrized(startup_shutdown_driver):
     pass
 
