@@ -10,8 +10,67 @@
         "elements": [
             {
                 "keyword": "Scenario",
-                "id": "test_login_with_a_valid_username_and_password",
-                "name": "Login with a valid username and password",
+                "id": "test_login_blank_username_blank_password",
+                "name": "Login, blank username, blank password",
+                "line": 31,
+                "description": "",
+                "tags": [],
+                "type": "scenario",
+                "steps": [
+                    {
+                        "keyword": "Given",
+                        "name": "DSF navigates to the Login Page",
+                        "line": 32,
+                        "match": {
+                            "location": ""
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 388978004
+                        }
+                    },
+                    {
+                        "keyword": "When",
+                        "name": "attempting to login with blank username and password fields",
+                        "line": 33,
+                        "match": {
+                            "location": ""
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 180998563
+                        }
+                    },
+                    {
+                        "keyword": "Then",
+                        "name": "validation is displayed that states the username is required",
+                        "line": 34,
+                        "match": {
+                            "location": ""
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 52998781
+                        }
+                    },
+                    {
+                        "keyword": "And",
+                        "name": "validation is displayed that states the password is required",
+                        "line": 35,
+                        "match": {
+                            "location": ""
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 43996572
+                        }
+                    }
+                ]
+            },
+            {
+                "keyword": "Scenario",
+                "id": "test_login_valid_username_valid_password",
+                "name": "Login, valid username, valid password",
                 "line": 4,
                 "description": "",
                 "tags": [],
@@ -26,7 +85,7 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 206003665
+                            "duration": 368006706
                         }
                     },
                     {
@@ -38,7 +97,7 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 270998477
+                            "duration": 1804000377
                         }
                     },
                     {
@@ -50,7 +109,7 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 24998903
+                            "duration": 28996706
                         }
                     },
                     {
@@ -62,15 +121,109 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 13998270
+                            "duration": 17999887
                         }
                     }
                 ]
             },
             {
                 "keyword": "Scenario",
-                "id": "test_login_with_a_valid_username_and_password__parametrized[tduncan-airforce1]",
-                "name": "Login with a valid username and password Parametrized",
+                "id": "test_parametrized_login_invalid_username_and_password_combination[xyz-xyz]",
+                "name": "Parametrized Login, invalid username and password combination",
+                "line": 21,
+                "description": "",
+                "tags": [],
+                "type": "scenario",
+                "steps": [
+                    {
+                        "keyword": "Given",
+                        "name": "DSF navigates to the Login Page",
+                        "line": 22,
+                        "match": {
+                            "location": ""
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 355956077
+                        }
+                    },
+                    {
+                        "keyword": "When",
+                        "name": "logging in as username <username> and password <password>",
+                        "line": 23,
+                        "match": {
+                            "location": ""
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 246001958
+                        }
+                    },
+                    {
+                        "keyword": "Then",
+                        "name": "validation for an invalid username and password combination is displayed",
+                        "line": 24,
+                        "match": {
+                            "location": ""
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 50030708
+                        }
+                    }
+                ]
+            },
+            {
+                "keyword": "Scenario",
+                "id": "test_parametrized_login_invalid_username_and_password_combination[tduncan-xyz]",
+                "name": "Parametrized Login, invalid username and password combination",
+                "line": 21,
+                "description": "",
+                "tags": [],
+                "type": "scenario",
+                "steps": [
+                    {
+                        "keyword": "Given",
+                        "name": "DSF navigates to the Login Page",
+                        "line": 22,
+                        "match": {
+                            "location": ""
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 342007160
+                        }
+                    },
+                    {
+                        "keyword": "When",
+                        "name": "logging in as username <username> and password <password>",
+                        "line": 23,
+                        "match": {
+                            "location": ""
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 229996442
+                        }
+                    },
+                    {
+                        "keyword": "Then",
+                        "name": "validation for an invalid username and password combination is displayed",
+                        "line": 24,
+                        "match": {
+                            "location": ""
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 52998542
+                        }
+                    }
+                ]
+            },
+            {
+                "keyword": "Scenario",
+                "id": "test_parametrized_login_valid_username_valid_password[tduncan-airforce1]",
+                "name": "Parametrized Login, valid username, valid password",
                 "line": 10,
                 "description": "",
                 "tags": [],
@@ -85,7 +238,7 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 210999965
+                            "duration": 358005046
                         }
                     },
                     {
@@ -97,7 +250,7 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 255005121
+                            "duration": 295004844
                         }
                     },
                     {
@@ -109,15 +262,15 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 22000551
+                            "duration": 29998302
                         }
                     }
                 ]
             },
             {
                 "keyword": "Scenario",
-                "id": "test_login_with_a_valid_username_and_password__parametrized[sharford-michigan]",
-                "name": "Login with a valid username and password Parametrized",
+                "id": "test_parametrized_login_valid_username_valid_password[sharford-michigan]",
+                "name": "Parametrized Login, valid username, valid password",
                 "line": 10,
                 "description": "",
                 "tags": [],
@@ -132,7 +285,7 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 204003095
+                            "duration": 436472177
                         }
                     },
                     {
@@ -144,7 +297,7 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 257001161
+                            "duration": 274995565
                         }
                     },
                     {
@@ -156,15 +309,15 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 2027292490
+                            "duration": 26002168
                         }
                     }
                 ]
             },
             {
                 "keyword": "Scenario",
-                "id": "test_login_with_a_valid_username_and_password__parametrized[gduncan-mommom]",
-                "name": "Login with a valid username and password Parametrized",
+                "id": "test_parametrized_login_valid_username_valid_password[gduncan-mommom]",
+                "name": "Parametrized Login, valid username, valid password",
                 "line": 10,
                 "description": "",
                 "tags": [],
@@ -179,7 +332,7 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 222006559
+                            "duration": 341928005
                         }
                     },
                     {
@@ -191,7 +344,7 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 248000621
+                            "duration": 257002830
                         }
                     },
                     {
@@ -203,7 +356,7 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 24998903
+                            "duration": 26998996
                         }
                     }
                 ]

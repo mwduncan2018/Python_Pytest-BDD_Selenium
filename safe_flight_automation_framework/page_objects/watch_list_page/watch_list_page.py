@@ -5,6 +5,7 @@
 import sys
 from ...driver import Driver
 from ..abstract_page.abstract_page import AbstractPage
+from ..delete_watch_list_entry_page.delete_watch_list_entry_page import DeleteWatchListEntryPage
 from selenium.webdriver.common.by import By
 
 class WatchListPage(AbstractPage):

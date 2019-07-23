@@ -25,18 +25,33 @@ def startup_shutdown_driver():
     yield
     Driver.shutdown()
 
-@scenario('Login.feature', 'Login with a valid username and password')
-def test_login_with_a_valid_username_and_password(startup_shutdown_driver):
-    """Login with a valid username and password."""
+@scenario('Login.feature', 'Login, blank username, blank password')
+def test_login_blank_username_blank_password(startup_shutdown_driver):
     pass
 
-@given('the webdriver is initialized')
-def the_webdriver_is_initialized():
+@scenario('Login.feature', 'Login, valid username, valid password')
+def test_login_valid_username_valid_password(startup_shutdown_driver):
+    pass
+
+@scenario('Login.feature', 'Parametrized Login, invalid username and password combination')
+def test_parametrized_login_invalid_username_and_password_combination(startup_shutdown_driver):
+    pass
+
+@scenario('Login.feature', 'Parametrized Login, valid username, valid password')
+def test_parametrized_login_valid_username_valid_password(startup_shutdown_driver):
     pass
 
 @given('DSF navigates to the Login Page')
 def dsf_navigates_to_the_login_page():
     LoginPage.go_to()
+
+@when('attempting to login with blank username and password fields')
+def attempting_to_login_with_blank_username_and_password_fields():
+    LoginPage.login_as('').with_password('').submit_form()
+
+@when('logging in as username <username> and password <password>')
+def logging_in_as_username_and_password(username, password):
+    LoginPage.login_as(username).with_password(password).submit_form()
 
 @when('logging in with a valid username and password combo')
 def logging_in_with_a_valid_username_and_password_combo():
@@ -44,16 +59,20 @@ def logging_in_with_a_valid_username_and_password_combo():
 
 @then('DSF is at the Flights Page')
 def dsf_is_at_the_flights_page():
-    assert FlightsPage.is_at()
+    assert FlightsPage.is_at() == True
 
 @then('DSF is not at the Login Page')
 def dsf_is_not_at_the_login_page():
     assert LoginPage.is_at() == False
 
-@scenario('Login.feature', 'Login with a valid username and password Parametrized')
-def test_login_with_a_valid_username_and_password__parametrized(startup_shutdown_driver):
-    pass
+@then('validation for an invalid username and password combination is displayed')
+def validation_for_an_invalid_username_and_password_combination_is_displayed():
+    assert LoginPage.validation_username_password_combination_invalid() == True
 
-@when('logging in as username <username> and password <password>')
-def logging_in_as_username_and_password(username, password):
-    LoginPage.login_as(username).with_password(password).submit_form()
+@then('validation is displayed that states the password is required')
+def validation_is_displayed_that_states_the_password_is_required():
+    assert LoginPage.password_validation_is_displayed() == True
+
+@then('validation is displayed that states the username is required')
+def validation_is_displayed_that_states_the_username_is_required():
+    assert LoginPage.username_validation_is_displayed() == True
