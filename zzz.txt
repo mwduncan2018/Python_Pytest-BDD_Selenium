@@ -1,0 +1,27 @@
+[<tr class="highlightRow" id="flightRow">
+<td id="watchList"><input checked="checked" class="check-box" disabled="disabled" type="checkbox"/></td>
+<td id="firstName">Michael</td>
+<td id="lastName">Duncan</td>
+<td id="departureAirport">Miami</td>
+<td id="departureTime">4/1/2019 1:01:01 AM</td>
+<td id="arrivalAirport">BWI</td>
+<td id="arrivalTime">4/1/2019 4:01:01 AM</td>
+<td>
+<a href="/Flights/Edit/1">Edit</a> |
+                    <a href="/Flights/Details/1">Details</a> |
+                    <a href="/Flights/Delete/1">Delete</a>
+</td>
+</tr>, <tr class="highlightRow" id="flightRow">
+<td id="watchList"><input checked="checked" class="check-box" disabled="disabled" type="checkbox"/></td>
+<td id="firstName">Erik</td>
+<td id="lastName">Angone</td>
+<td id="departureAirport">Nashville</td>
+<td id="departureTime">1/1/2019 2:22:00 AM</td>
+<td id="arrivalAirport">Detroit</td>
+<td id="arrivalTime">1/1/2019 5:22:00 AM</td>
+<td>
+<a href="/Flights/Edit/54">Edit</a> |
+                    <a href="/Flights/Details/54">Details</a> |
+                    <a href="/Flights/Delete/54">Delete</a>
+</td>
+</tr>]
